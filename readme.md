@@ -1,15 +1,42 @@
-Closures
-========
+# Closures
 
-This lab requires rewriting the `Car` class as a function factory using the closure pattern. You may not use the `class` keyword in your submission, and no code outside of the Car function needs to be modified.
+## Learning Outcomes
 
-When your solution is working, all tests will pass, and you will see three "cars" race in the terminal.
+1. Convert a class-based object to a factory that uses closures for private state
+2. Encapsulate internal state using function scope
+3. Write and run zero-dependency tests using Node.js
+4. Separate program execution from test execution
 
-Running
--------
+## Context
 
-This is a JS program that can be run in nodejs:
+Reimplement the `Car` class as a function factory that uses [closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures) to keep position and speed private. No code outside the Car function should need modification.
+
+## Usage
+
+Run tests:
 
 ```
-node closure.js
+make test
 ```
+
+Run the race animation:
+
+```
+make run
+```
+
+## Testing
+
+The project includes inline assertions that exercise the Car API. `make test` runs the assertions and exits. `make run` executes the race animation after the tests pass.
+
+## Tasks
+
+1. Replace the Car class with a factory function `Car(acceleration, topSpeed)`
+2. Ensure position and speed are not publicly accessible
+3. Keep the API: `update()`, `getPosition()`
+4. Do not use the `class` keyword
+
+## Resources
+
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+- [State Representation](https://en.wikipedia.org/wiki/Closure_(computer_programming)#State_representation)
