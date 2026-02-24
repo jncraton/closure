@@ -5,25 +5,25 @@ const assert = require('assert')
 // function Car(acceleration, topSpeed) {
 
 class Car {
-  constructor (acceleration, topSpeed) {
+  constructor(acceleration, topSpeed) {
     this.acceleration = acceleration
     this.topSpeed = topSpeed
     this.position = 0
     this.speed = 0
   }
 
-  getPosition () {
+  getPosition() {
     return this.position
   }
 
-  update () {
+  update() {
     this.speed += this.acceleration
     this.speed = Math.min(this.topSpeed, this.speed)
     this.position += this.speed
   }
 }
 
-function race (cars) {
+function race(cars) {
   console.clear()
   cars.forEach((car, i) => {
     car.update()
@@ -44,8 +44,4 @@ assert(car.update() || car.getPosition() === 3, 'Position does not update correc
 assert(car.position === undefined, 'Position is public')
 assert(car.speed === undefined, 'Speed is public')
 
-race([
-  new Car(1.2, 6),
-  new Car(1, 12),
-  new Car(1.1, 8)
-])
+race([new Car(1.2, 6), new Car(1, 12), new Car(1.1, 8)])
