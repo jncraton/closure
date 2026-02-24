@@ -33,7 +33,7 @@ The project includes inline assertions that exercise the Car API. `make test` ru
 
 1. Replace the Car class with a factory function `Car(acceleration, topSpeed)`
 2. Ensure position and speed are not publicly accessible
-3. Keep the API: `update()`, `getPosition()`
+3. Keep API unchanged. `update()` and `getPosition()` should still function as methods
 4. Do not use the `class` keyword
 
 ## Resources
