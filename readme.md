@@ -40,3 +40,4 @@ The project includes inline assertions that exercise the Car API. `make test` ru
 
 - [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [State Representation](https://en.wikipedia.org/wiki/Closure_(computer_programming)#State_representation)
+- [Function Objects in JavaScript](https://en.wikipedia.org/wiki/Function_object#In_JavaScript)
